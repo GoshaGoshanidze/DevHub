@@ -1,0 +1,9 @@
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/AdminController.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/AppUser.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/AuthController.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/CustomUserDetailsService.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/DevhubApplication.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/RequestLoggingFilterConfig.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/SecurityConfig.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/UserRepository.java
+/Users/maksimlevsa/IdeaProjects/DevHub/devhub/src/main/java/com/devhub/devhub/repository/AppUserRepository.java

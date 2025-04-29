@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Админ-панель</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 2rem;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .btn-logout {
+            background-color: #ff5555;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .card-container {
+            display: flex;
+            gap: 2rem;
+        }
+        .card {
+            flex: 1;
+            padding: 2rem;
+            background: #1e1e1e;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            background: #272727;
+        }
+        .card a {
+            text-decoration: none;
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Привет, <span th:text="${username}">пользователь</span>!</h1>
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="btn-logout">Выйти</button>
+    </form>
+</header>
+
+<div class="card-container">
+    <div class="card">
+        <a th:href="@{/admin/projects}">📁 Управление проектами</a>
+    </div>
+    <div class="card">
+        <a th:href="@{/admin/messages}">💬 Сообщения обратной связи</a>
+    </div>
+</div>
+</body>
+</html>
